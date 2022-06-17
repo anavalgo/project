@@ -1,0 +1,15 @@
+header {
+    background-color: #CC3366;
+    color: #eee;
+    padding: 20px;
+    margin: 20px;
+}
+
+.nav-link {
+    color: #eee;
+    text-decoration: none;
+}
+.active {
+    color:black;
+    font-weight: bolder;
+}
