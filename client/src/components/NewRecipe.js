@@ -24,19 +24,21 @@ function NewRecipe() {
         });
     };
     return (
-        <form onSubmit={submitHandler}>
+        <form class= "form" onSubmit={submitHandler}>
         <label>Title:</label>
-        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+        <input id="sec" type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
         {errors.title && <p className="text-danger">{errors.title.message}</p>}
+        <br/>
         <label>Ingredients:</label>
-        <input type="text" value={ingredients} onChange={(e) => setIngredients(e.target.value)} />
+        <input id="sec" type="text" value={ingredients} onChange={(e) => setIngredients(e.target.value)} />
         {errors.ingredients && <p className="text-danger">{errors.ingredients.message}</p>}
+        <br/>
         <label>Description:</label>
-        <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} />
+        <input id="sec" type="text" value={description} onChange={(e) => setDescription(e.target.value)} />
         {errors.description && <p className="text-danger">{errors.description.message}</p>}
 
         <br />
-        <input type="submit" value="Add Recipe" />
+        <input class="button" type="submit" value="Add Recipe" />
         </form>
     );
 }

@@ -1,15 +1,16 @@
 header {
-    background-color: #CC3366;
-    color: #eee;
+    background-color: #ccffe6;
+    color: black;
     padding: 20px;
-    margin: 20px;
+    margin: 2px;
+    text-align: center;
 }
 
 .nav-link {
-    color: #eee;
+    color:#990099;
     text-decoration: none;
 }
 .active {
-    color:black;
+    color: #cc99ff;
     font-weight: bolder;
 }

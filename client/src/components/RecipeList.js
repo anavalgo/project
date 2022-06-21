@@ -30,11 +30,12 @@ function RecipeList() {
             <div className="recipe" key={recipe._id}>
             <h2>{recipe.title}</h2>
             <br />
-            <Link to={`/recipe/${recipe._id}`}> Description</Link>
+            <Link class="link" to={`/recipe/${recipe._id}`}> Description</Link>
             <span> | </span>
-            <Link to={`/recipe/edit/${recipe._id}`}> Update</Link>
+            <Link class="link" to={`/recipe/edit/${recipe._id}`}> Update</Link>
             <br />
-            <button onClick={() => handleDelete(recipe._id)}>Delete</button>
+            <br />
+            <button class="button" onClick={() => handleDelete(recipe._id)}>Delete</button>
             </div>
         ))}
         </div>

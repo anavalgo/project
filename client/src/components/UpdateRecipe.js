@@ -37,17 +37,19 @@ function UpdateRecipe() {
         });
     };
     return (
-        <form onSubmit={submitHandler}>
+        <form class="form" onSubmit={submitHandler}>
         <label>Title:</label>
-        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+        <input id="sec" type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+        <br/>
         <label>Ingredients:</label>
-        <input type="text" value={ingredients} onChange={(e) => setIngredients(e.target.value)} />
+        <input id="sec" type="text" value={ingredients} onChange={(e) => setIngredients(e.target.value)} />
+        <br/>
         <label>Description:</label>
-        <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} />
+        <input id="sec" type="text" value={description} onChange={(e) => setDescription(e.target.value)} />
         
         
         <br />
-        <input type="submit" value="Update Recipe" />
+        <input class="button" type="submit" value="Update Recipe" />
         </form>
     );
 }

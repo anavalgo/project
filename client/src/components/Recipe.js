@@ -31,9 +31,12 @@ function Recipe() {
     return (
         <div>
         <h2>{recipe.title}</h2>
+        <br/>
         <p>Ingredients: {recipe.ingredients}</p>
+        <br/>
         <p>Description: {recipe.description}</p>
-        <button onClick={handleDelete}>Delete</button>
+        <br/>
+        <button class="button" onClick={handleDelete}>Delete</button>
         </div>
     );
 }
