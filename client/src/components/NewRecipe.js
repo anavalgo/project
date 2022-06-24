@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 function NewRecipe() {
     const [title, setTitle] = useState('');
     const [ingredients, setIngredients] = useState('');
-    const [description, setDescription] = useState([]);
+    const [description, setDescription] = useState('');
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
     const submitHandler = (e) => {
@@ -23,6 +23,8 @@ function NewRecipe() {
             setErrors(err.response.data.error.errors);
         });
     };
+
+    
     return (
         <form class= "form" onSubmit={submitHandler}>
         <label>Title:</label>
@@ -36,7 +38,6 @@ function NewRecipe() {
         <label>Description:</label>
         <input id="sec" type="text" value={description} onChange={(e) => setDescription(e.target.value)} />
         {errors.description && <p className="text-danger">{errors.description.message}</p>}
-
         <br />
         <input class="button" type="submit" value="Add Recipe" />
         </form>

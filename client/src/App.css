@@ -1,21 +1,28 @@
 .App {
-  text-align: left;
+  text-align: justify;
   margin: 20px;
   padding: 30px;
-  font-family: Courier, monospace;
+  font-family: Gill Sans, sans-serif;
   font-size: large;
   font-weight: bold;
-  background-image: url(/Users/anagomez/Downloads/kitchen.jpg);
-  background-size: 1200;
+  background-image: url(/Users/anagomez/Downloads/kitchen3.jpg);
+  opacity: 0.75;
 }
-
 
 .form{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  color: #f2e6ff;
+  color: black;
+}
+
+input[type=text] {
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius: 18px;
+  height: 30px;
 }
 
 #sec{
@@ -23,11 +30,21 @@
 }
 
 .button{
-  font-family: Andale Mono, monospace;
+  font-family: Gill San;
+  margin: 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  padding:8px;
+  font-family: Gill Sans, sans-serif;
+  border-radius: 18px;
+}
+
+.link{
+  margin: 20px;
 }
 
 h2, p, .link{
-  color: #f2e6ff;
+  color: black;
   font-weight: bold;
 }
 

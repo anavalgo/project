@@ -1,5 +1,5 @@
 header {
-    background-color: #ccffe6;
+    background-color: F3F3E9;
     color: black;
     padding: 20px;
     margin: 2px;
@@ -11,6 +11,6 @@ header {
     text-decoration: none;
 }
 .active {
-    color: #cc99ff;
+    color:#0398AE;
     font-weight: bolder;
 }

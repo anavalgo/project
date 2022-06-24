@@ -28,7 +28,9 @@ function RecipeList() {
         <div className="container">
         {recipes.map((recipe) => (
             <div className="recipe" key={recipe._id}>
-            <h2>{recipe.title}</h2>
+            <ul>
+            <li><h2>{recipe.title}</h2></li>
+            </ul>
             <br />
             <Link class="link" to={`/recipe/${recipe._id}`}> Description</Link>
             <span> | </span>
